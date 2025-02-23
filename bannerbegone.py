@@ -48,7 +48,7 @@ if __name__ == "__main__":
     options = webdriver.ChromeOptions()
     options.add_argument("--ignore-certificate-errors")
     driver = webdriver.Chrome(options=options)
-    with open("pages.txt", encoding="utf-8") as pages:
+    with open("testpages.txt", encoding="utf-8") as pages:
         for page in pages:
             driver.get(page)
             time.sleep(0.2)
