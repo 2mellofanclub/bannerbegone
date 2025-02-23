@@ -1,4 +1,4 @@
-import easyocr, pyautogui, sys, os, time
+import easyocr, pyautogui, os, time
 from selenium import webdriver
 
 
@@ -41,10 +41,6 @@ def ocr_click_word(reader, target_words, condition_words=None):
 
 if __name__ == "__main__":
     print("\n\n")
-    #if len(sys.argv) < 2:
-    #    print("\033[91m\nPlease provide a list of pages to check as a txt-file.\033[00m")
-    #    print("Example:     python3 bannerbegone.py pages.txt\n")
-    #    quit()
     options = webdriver.ChromeOptions()
     options.add_argument("--ignore-certificate-errors")
     driver = webdriver.Chrome(options=options)
