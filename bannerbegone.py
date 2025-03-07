@@ -50,7 +50,7 @@ if __name__ == "__main__":
             time.sleep(0.2)
             driver.execute_script("document.body.style.zoom = '80%';")
             ocr_deny_cookies()
-            time.sleep(0.2)
+            time.sleep(1)
         driver.quit()
 
 
